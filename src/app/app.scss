@@ -14,5 +14,5 @@ ion-nav,
 ion-tab,
 ion-tabs,
 ion-list {
-    contain: none;
+    contain: none !important;
 }

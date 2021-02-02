@@ -31,8 +31,15 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": []
+            "styles": [
+ 
+              {
+                "input":  "node_modules/intro.js/introjs.css"
+              },
+              "src/theme/variables.scss",
+              "src/global.scss"
+            ],
+            "scripts": [ "node_modules/intro.js/intro.js"]
           },
           "configurations": {
             "production": {
