@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import * as introJs from 'intro.js/intro.js';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
-
+  showHelp(){
+    introJs(document.querySelector("app-home")).setOptions({
+      'nextLabel': 'Next step',
+      'prevLabel': 'Previous step',
+      'skipLabel': 'Don\'t bother me!',
+      'doneLabel': 'Finish'
+    }).start(); 
+  }
 }
